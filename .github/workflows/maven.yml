@@ -24,7 +24,7 @@ jobs:
         java-version: 1.8
     - name: Setting up Kubernetes
       run: | 
-          apt install conntrack 
+          sudo apt install conntrack 
           curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
           chmod +x kubectl
           wget https://github.com/kubernetes/minikube/releases/download/v1.14.2/minikube-linux-amd64 -q -O minikube
